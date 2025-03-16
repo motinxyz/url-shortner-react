@@ -39,6 +39,9 @@ const LandingPage = () => {
 
           <div className="items-center gap-3">
             <motion.button
+              onClick={() => {
+                navigate("/dashboard");
+              }}
               initial={{ opacity: 0, y: 80 }}
               whileInView={{
                 opacity: 1,
@@ -47,11 +50,14 @@ const LandingPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               //   onClick={dashBoardNavigateHandler}
-              className="m-2 bg-blue-500 border-black text-amber-50 border w-40 rounded-sm py-2"
+              className="m-2 bg-blue-500 border-black text-amber-50 border w-40 rounded-sm py-2 hover:bg-blue-700 transition"
             >
               Manage Links
             </motion.button>
             <motion.button
+              onClick={() => {
+                navigate("/dashboard");
+              }}
               initial={{ opacity: 0, y: 80 }}
               whileInView={{
                 opacity: 1,
@@ -61,7 +67,7 @@ const LandingPage = () => {
               transition={{ duration: 0.8 }}
               //   onClick={dashBoardNavigateHandler}
 
-              className="m-2 border w-40 rounded-sm py-2"
+              className="m-2 border w-40 rounded-sm py-2 hover:bg-gray-300 transition"
             >
               Shorten Link
             </motion.button>
